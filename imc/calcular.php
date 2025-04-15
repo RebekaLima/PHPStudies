@@ -12,9 +12,10 @@ $usuario->calculoImc();
 include "cabecalho.php";
 ?>
 
-<button tupe="button" class="btn btn-danger">O seu IMC é: <?php echo $usuario->exibirImc()?></button>
-<button type="button" class="btn btn-outline-danger">Seu IMC está na categoria:  <?php echo $usuario->valorImc() ?></button>
-
+<div class="mx-auto p-2 bg-secondary-subtle rounded-start" style="width: 400px;">
+<button tupe="button" class="btn btn-danger mb-2">O seu IMC é: <?php echo $usuario->exibirImc()?></button>
+<button type="button" class="btn btn-outline-danger mb-2">Seu IMC está na categoria:  <?php echo $usuario->valorImc() ?></button>
+</div>
 <?php
 include "rodape.php";
 ?>
